@@ -25,7 +25,12 @@ export const Navbar = () => {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [mobileMenuOpen]);
 
-  const links = ['Systems', 'Defense', 'Security', 'Company'];
+  const navItems = [
+    { label: 'Systems', path: '/products' },
+    { label: 'Defense', path: '/solutions' },
+    { label: 'Security', path: '/technology' },
+    { label: 'Company', path: '/about' }
+  ];
 
   return (
     <header className={twMerge(clsx(
@@ -46,14 +51,14 @@ export const Navbar = () => {
 
         {/* Desktop Links */}
         <div className="hidden md:flex items-center space-x-12" role="menubar">
-          {links.map(link => (
+          {navItems.map(item => (
             <a 
-              key={link} 
-              href={`/${link.toLowerCase()}`} 
+              key={item.label} 
+              href={item.path} 
               role="menuitem"
               className="text-white/70 hover:text-white transition-colors text-xs uppercase tracking-[0.2em] font-mono focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white px-2 py-1"
             >
-              {link}
+              {item.label}
             </a>
           ))}
           <a href="/contact" className="border border-white/30 px-6 py-2 text-xs text-white uppercase tracking-[0.1em] font-bold hover:bg-white hover:text-black transition-colors duration-300">
@@ -98,10 +103,10 @@ export const Navbar = () => {
               ✕
             </button>
             <div className="flex flex-col items-center space-y-8" role="menu">
-              {links.map((link, i) => (
+              {navItems.map((item, i) => (
                 <motion.a 
-                  key={link} 
-                  href={`/${link.toLowerCase()}`}
+                  key={item.label} 
+                  href={item.path}
                   role="menuitem"
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -109,7 +114,7 @@ export const Navbar = () => {
                   onClick={() => setMobileMenuOpen(false)}
                   className="text-white text-3xl font-sans font-bold tracking-wider uppercase focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white px-4 py-2"
                 >
-                  {link}
+                  {item.label}
                 </motion.a>
               ))}
             </div>
