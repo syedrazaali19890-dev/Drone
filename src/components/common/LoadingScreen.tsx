@@ -28,9 +28,12 @@ export const LoadingScreen = ({ onComplete }: { onComplete: () => void }) => {
             className="flex flex-col items-center"
           >
             {/* Logo placeholder */}
-            <h1 className="text-white text-3xl font-heading font-extrabold tracking-widest uppercase mb-8">
-              Antigravity
-            </h1>
+            <div className="flex items-center gap-4 mb-8">
+              <img src="/logo.png" alt="" className="w-12 h-12 object-contain mix-blend-screen" />
+              <h1 className="text-white text-3xl font-sans font-bold tracking-[0.15em] uppercase">
+                RAVEMFG
+              </h1>
+            </div>
             <div className="w-48 h-[1px] bg-white/20 overflow-hidden relative">
               <motion.div
                 initial={{ x: '-100%' }}
