@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /*?*sort=
+Disallow: /*?*search=
+
+Sitemap: https://www.antigravity-corp.com/sitemap.xml

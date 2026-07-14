@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors - Anduril Inspired */
+  --color-bg-primary: #000000;
+  --color-bg-secondary: #0a0a0a;
+  --color-surface: #111111;
+  --color-border: #1f1f1f;
+  
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #888888;
+  
+  --color-accent: #ffffff; /* Sharp white for accent */
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+
+  /* Typography */
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* Font Sizes */
+  --text-caption: 11px;
+  --text-small: 13px;
+  --text-body: 16px;
+  --text-sub-heading: 20px;
+  --text-heading: 32px;
+  --text-section-title: 48px;
+  --text-hero: 80px;
+
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* Border Radius - Sharp Edges */
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
+
+  /* Shadows - Minimal/Harsh */
+  --shadow-soft: none;
+  --shadow-medium: 0 4px 20px rgba(0, 0, 0, 0.5);
+  --shadow-large: 0 10px 40px rgba(0, 0, 0, 0.8);
+  --shadow-glass: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+  --shadow-hover: 0 0 20px rgba(255, 255, 255, 0.1); 
+
+  /* Spacing */
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 20px;
+  --spacing-6: 24px;
+  --spacing-8: 32px;
+  --spacing-10: 40px;
+  --spacing-12: 48px;
+  --spacing-16: 64px;
+  --spacing-20: 80px;
+  --spacing-24: 96px;
+  --spacing-30: 120px;
+
+  /* Breakpoints */
+  --breakpoint-mobile: 640px;
+  --breakpoint-tablet: 1024px;
+  --breakpoint-laptop: 1440px;
+  --breakpoint-desktop: 1441px;
+}
+
+@layer base {
+  :root {
+    --bg-primary: var(--color-bg-primary);
+    --bg-secondary: var(--color-bg-secondary);
+    --surface: var(--color-surface);
+    --border: var(--color-border);
+    --text-primary: var(--color-text-primary);
+    --text-secondary: var(--color-text-secondary);
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--text-primary);
+    margin: 0;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    background-color: rgba(24, 24, 24, 0.6);
+    border: 1px solid var(--border);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-glass);
+  }
+
+  .text-hero {
+    font-size: var(--text-hero);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+  
+  .text-section-title {
+    font-size: var(--text-section-title);
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+  
+  .text-heading {
+    font-size: var(--text-heading);
+    line-height: 1.3;
+  }
+}
