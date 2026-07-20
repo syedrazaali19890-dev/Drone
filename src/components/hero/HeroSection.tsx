@@ -34,26 +34,30 @@ export const HeroSection = () => {
   return (
     <section ref={containerRef} className="relative h-[100svh] w-full flex items-center justify-start overflow-hidden bg-black">
       <div className="absolute inset-0 z-0">
-        <img 
-          src="/hero_drone_bg.png" 
-          alt="Autonomous Drone" 
+        <video 
+          autoPlay 
+          loop 
+          muted 
+          playsInline 
           className="absolute inset-0 w-full h-full object-cover object-center opacity-80 mix-blend-screen scale-105"
-        />
+        >
+          <source src="/milling-ad.mp4" type="video/mp4" />
+        </video>
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/30" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent" />
       </div>
       
       <div className="relative z-20 px-6 md:px-16 lg:px-32 w-full mt-10 md:mt-0">
         <div className="max-w-4xl flex flex-col items-start">
-          <span className="text-white/70 font-mono text-sm tracking-[0.2em] uppercase mb-6 block border-l-2 border-white pl-4">
-            Next-Generation Systems
+          <span className="text-white/70 font-mono text-xs md:text-sm tracking-[0.2em] uppercase mb-6 block border-l-2 border-white pl-4">
+            Precision Engineering
           </span>
-          <h1 ref={headlineRef} className="text-white text-5xl md:text-7xl lg:text-[100px] font-sans font-bold tracking-tighter mb-8 leading-[0.95] uppercase">
-            Transforming <br />
-            <span className="text-white">Defense</span>
+          <h1 ref={headlineRef} className="text-white text-4xl md:text-6xl lg:text-7xl font-sans font-bold tracking-tighter mb-8 leading-[0.95] uppercase">
+            Advanced <br />
+            <span className="text-white">Manufacturing</span>
           </h1>
-          <p ref={textRef} className="text-[#a0a0a0] text-lg md:text-xl lg:text-2xl mb-12 max-w-2xl leading-relaxed font-sans font-medium">
-            We build software-defined, hardware-enabled systems for the modern battlefield. Unmatched precision, total autonomy.
+          <p ref={textRef} className="text-[#a0a0a0] text-base md:text-lg lg:text-xl mb-12 max-w-2xl leading-relaxed font-sans font-medium">
+            We utilize state-of-the-art CNC milling technology to deliver unmatched precision, speed, and efficiency for complex industrial components.
           </p>
           <div ref={ctaRef} className="flex flex-col sm:flex-row items-stretch sm:items-center gap-6 w-full sm:w-auto">
             <Button variant="primary" size="lg" className="rounded-none border border-white bg-white text-black hover:bg-black hover:text-white uppercase tracking-widest font-bold text-sm px-10 py-5 transition-all duration-300">

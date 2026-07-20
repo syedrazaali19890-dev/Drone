@@ -17,17 +17,17 @@ export const MissionSection = () => {
             01 // Our Mission
           </span>
           <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-sans font-bold tracking-tight mb-8 leading-[1.1] uppercase">
-            Autonomy at <br />
+            Precision at <br />
             <span className="text-white/50">Scale</span>
           </h2>
           <p className="text-[#a0a0a0] text-lg leading-relaxed font-sans font-medium mb-8">
-            RaveMFG is building the next generation of military technology. Our software-first approach integrates AI, computer vision, and distributed edge computing into autonomous systems designed for the most demanding environments on Earth.
+            RaveMFG is building the next generation of manufacturing technology. Our approach integrates state-of-the-art CNC machining, precision engineering, and automation designed for the most demanding tolerances on Earth.
           </p>
           <p className="text-[#a0a0a0] text-lg leading-relaxed font-sans font-medium mb-10">
-            We move faster than traditional defense contractors, rapidly fielding systems that save lives and deter conflict.
+            We move faster than traditional machine shops, rapidly delivering high-quality components that power the future.
           </p>
           <a href="/mission" className="group flex items-center text-white text-sm font-bold uppercase tracking-widest hover:text-[#a0a0a0] transition-colors">
-            <span className="mr-4">Read The Manifesto</span>
+            <span className="mr-4">Our Manufacturing Vision</span>
             <span className="block w-8 h-[1px] bg-white group-hover:bg-[#a0a0a0] transition-colors" />
           </a>
         </motion.div>
@@ -41,8 +41,8 @@ export const MissionSection = () => {
         >
           <div className="absolute inset-0 bg-[#111] z-0" />
           <img 
-            src="/autonomous_vehicle.png" 
-            alt="Autonomous Defense Vehicle" 
+            src="/manufacturing_1.jpg" 
+            alt="Precision Manufacturing" 
             className="absolute inset-0 w-full h-full object-cover z-10 grayscale hover:grayscale-0 transition-all duration-700 opacity-80"
           />
           {/* Tech overlay decorations */}

@@ -26,9 +26,10 @@ export const Navbar = () => {
   }, [mobileMenuOpen]);
 
   const navItems = [
+    { label: 'Services', path: '/services' },
     { label: 'Systems', path: '/products' },
-    { label: 'Defense', path: '/solutions' },
-    { label: 'Security', path: '/technology' },
+    { label: 'Solutions', path: '/solutions' },
+    { label: 'Technology', path: '/technology' },
     { label: 'Company', path: '/about' }
   ];
 
@@ -43,10 +44,7 @@ export const Navbar = () => {
 
       <nav aria-label="Primary Navigation" className="max-w-[1440px] mx-auto px-6 md:px-12 flex items-center justify-between">
         <a href="/" aria-label="RaveMFG Home" className="flex items-center gap-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white">
-          <img src="/logo.png" alt="" className="w-8 h-8 object-contain mix-blend-screen" />
-          <span className="text-white text-xl md:text-2xl font-sans font-bold tracking-[0.15em] uppercase">
-            RAVEMFG
-          </span>
+          <img src="/logo.png" alt="Rave MFG Logo" className="h-20 md:h-24 object-contain mix-blend-screen" />
         </a>
 
         {/* Desktop Links */}

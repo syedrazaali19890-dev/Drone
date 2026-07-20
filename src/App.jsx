@@ -12,6 +12,7 @@ import { LoadingScreen } from './components/common/LoadingScreen';
 const Home = lazy(() => import('./pages/Home'));
 const About = lazy(() => import('./pages/About'));
 const Products = lazy(() => import('./pages/Products'));
+const Services = lazy(() => import('./pages/Services'));
 const Solutions = lazy(() => import('./pages/Solutions'));
 const Industries = lazy(() => import('./pages/Industries'));
 const Technology = lazy(() => import('./pages/Technology'));
@@ -39,6 +40,7 @@ const AnimatedRoutes = () => {
             <Route index element={<PageTransition locationKey={location.pathname}><Home /></PageTransition>} />
             <Route path="about" element={<PageTransition locationKey={location.pathname}><About /></PageTransition>} />
             <Route path="products" element={<PageTransition locationKey={location.pathname}><Products /></PageTransition>} />
+            <Route path="services" element={<PageTransition locationKey={location.pathname}><Services /></PageTransition>} />
             <Route path="solutions" element={<PageTransition locationKey={location.pathname}><Solutions /></PageTransition>} />
             <Route path="industries" element={<PageTransition locationKey={location.pathname}><Industries /></PageTransition>} />
             <Route path="technology" element={<PageTransition locationKey={location.pathname}><Technology /></PageTransition>} />
@@ -61,14 +63,14 @@ function App() {
   // Note: For development, you might want to skip the loading screen after first mount.
   // We'll run it once per session.
   useEffect(() => {
-    const hasLoaded = sessionStorage.getItem('antigravity_loaded');
-    if (hasLoaded) {
-      setInitialLoad(false);
-    }
+    // const hasLoaded = sessionStorage.getItem('antigravity_loaded');
+    // if (hasLoaded) {
+    //   setInitialLoad(false);
+    // }
   }, []);
 
   const handleLoadComplete = () => {
-    sessionStorage.setItem('antigravity_loaded', 'true');
+    // sessionStorage.setItem('antigravity_loaded', 'true');
     setInitialLoad(false);
   };
 

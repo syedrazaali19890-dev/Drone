@@ -14,17 +14,17 @@ export const AerialSection = () => {
           className="flex flex-col items-start"
         >
           <span className="text-white/50 font-mono text-xs tracking-[0.2em] uppercase mb-4 block">
-            03 // Aerial Superiority
+            03 // Complex Geometries
           </span>
           <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-sans font-bold tracking-tight mb-8 leading-[1.1] uppercase">
-            Dominate The <br />
-            <span className="text-white/50">Skies</span>
+            Mastering The <br />
+            <span className="text-white/50">Details</span>
           </h2>
           <p className="text-[#a0a0a0] text-lg leading-relaxed font-sans font-medium mb-8">
-            Our autonomous Unmanned Aerial Vehicles (UAVs) provide unmatched situational awareness, threat deterrence, and kinetic capabilities. Built for long-endurance missions in denied airspace.
+            Our 5-axis milling capabilities provide unmatched versatility, enabling the production of highly complex components. Built to handle difficult materials and intricate geometries with ease.
           </p>
-          <a href="/systems/aerial" className="group flex items-center text-white text-sm font-bold uppercase tracking-widest hover:text-[#a0a0a0] transition-colors">
-            <span className="mr-4">View Aerial Systems</span>
+          <a href="/systems/milling" className="group flex items-center text-white text-sm font-bold uppercase tracking-widest hover:text-[#a0a0a0] transition-colors">
+            <span className="mr-4">View Milling Capabilities</span>
             <span className="block w-8 h-[1px] bg-white group-hover:bg-[#a0a0a0] transition-colors" />
           </a>
         </motion.div>
@@ -38,8 +38,8 @@ export const AerialSection = () => {
         >
           <div className="absolute inset-0 bg-[#111] z-0" />
           <img 
-            src="/aerial_drone.png" 
-            alt="Advanced Autonomous Drone" 
+            src="/manufacturing_3.jpg" 
+            alt="5-Axis Milling" 
             className="absolute inset-0 w-full h-full object-cover z-10 grayscale hover:grayscale-0 transition-all duration-700 opacity-80"
           />
           <div className="absolute top-4 right-4 z-20 flex flex-col gap-1 items-end">

@@ -15,8 +15,8 @@ export const NavalSection = () => {
         >
           <div className="absolute inset-0 bg-[#111] z-0" />
           <img 
-            src="/naval_vessel.png" 
-            alt="Autonomous Naval Vessel" 
+            src="/manufacturing_4.jpg" 
+            alt="Quality Control" 
             className="absolute inset-0 w-full h-full object-cover z-10 grayscale hover:grayscale-0 transition-all duration-700 opacity-80"
           />
           <div className="absolute top-4 left-4 z-20 flex gap-1">
@@ -34,17 +34,17 @@ export const NavalSection = () => {
           className="flex flex-col items-start order-1 md:order-2"
         >
           <span className="text-white/50 font-mono text-xs tracking-[0.2em] uppercase mb-4 block">
-            04 // Maritime Operations
+            04 // Quality Control
           </span>
           <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-sans font-bold tracking-tight mb-8 leading-[1.1] uppercase">
-            Control The <br />
-            <span className="text-white/50">Depths</span>
+            Unmatched <br />
+            <span className="text-white/50">Tolerances</span>
           </h2>
           <p className="text-[#a0a0a0] text-lg leading-relaxed font-sans font-medium mb-8">
-            From surface patrols to deep-sea reconnaissance, our autonomous naval platforms provide persistent maritime security. Equipped with advanced sonar and edge-compute payloads.
+            From initial prototyping to full-scale production, our strict quality control processes ensure every part meets exacting standards. Equipped with advanced metrology and inspection tools.
           </p>
-          <a href="/systems/naval" className="group flex items-center text-white text-sm font-bold uppercase tracking-widest hover:text-[#a0a0a0] transition-colors">
-            <span className="mr-4">View Naval Systems</span>
+          <a href="/quality" className="group flex items-center text-white text-sm font-bold uppercase tracking-widest hover:text-[#a0a0a0] transition-colors">
+            <span className="mr-4">Our Quality Standards</span>
             <span className="block w-8 h-[1px] bg-white group-hover:bg-[#a0a0a0] transition-colors" />
           </a>
         </motion.div>

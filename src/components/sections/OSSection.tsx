@@ -15,8 +15,8 @@ export const OSSection = () => {
         >
           <div className="absolute inset-0 bg-[#111] z-0" />
           <img 
-            src="/os_network.png" 
-            alt="Defense OS Interface" 
+            src="/manufacturing_2.jpg" 
+            alt="Advanced Machining" 
             className="absolute inset-0 w-full h-full object-cover z-10 grayscale hover:grayscale-0 transition-all duration-700 opacity-80"
           />
           <div className="absolute top-4 left-4 z-20 flex flex-col gap-1">
@@ -35,17 +35,17 @@ export const OSSection = () => {
           className="flex flex-col items-start order-1 md:order-2"
         >
           <span className="text-white/50 font-mono text-xs tracking-[0.2em] uppercase mb-4 block">
-            02 // Operating System
+            02 // Advanced Machining
           </span>
           <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-sans font-bold tracking-tight mb-8 leading-[1.1] uppercase">
             The Brains of <br />
-            <span className="text-white/50">Defense</span>
+            <span className="text-white/50">Manufacturing</span>
           </h2>
           <p className="text-[#a0a0a0] text-lg leading-relaxed font-sans font-medium mb-8">
-            Lattice OS is an AI-powered operating system that networks all our hardware systems into a single, unified command architecture. It processes millions of data points per second to identify threats automatically.
+            Our CNC control software networks all our hardware systems into a single, unified command architecture. It processes complex toolpaths to ensure flawless execution of the most intricate designs.
           </p>
           <a href="/software" className="group flex items-center text-white text-sm font-bold uppercase tracking-widest hover:text-[#a0a0a0] transition-colors">
-            <span className="mr-4">Explore Lattice OS</span>
+            <span className="mr-4">Explore Our Technology</span>
             <span className="block w-8 h-[1px] bg-white group-hover:bg-[#a0a0a0] transition-colors" />
           </a>
         </motion.div>
