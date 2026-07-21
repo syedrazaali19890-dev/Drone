@@ -31,7 +31,7 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
               "flex w-full min-h-[48px] rounded-[var(--radius-sm)] border bg-[var(--color-bg-secondary)] px-4 py-3 text-sm text-white transition-colors outline-none",
               "border-[var(--color-border)] hover:border-white/30",
               "focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] focus-visible:border-transparent",
-              "placeholder:text-[var(--color-text-secondary)]/50",
+              "placeholder:text-[var(--color-text-secondary)]",
               "disabled:cursor-not-allowed disabled:opacity-50",
               error && "border-red-500 focus-visible:ring-red-500",
               className
