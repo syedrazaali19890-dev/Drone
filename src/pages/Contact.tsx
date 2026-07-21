@@ -18,7 +18,7 @@ const Contact = () => {
         <div>
           <h2 className="text-3xl font-heading font-bold text-white mb-6">Get in Touch</h2>
           <form className="space-y-6">
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
               <Input placeholder="First Name" />
               <Input placeholder="Last Name" />
             </div>
