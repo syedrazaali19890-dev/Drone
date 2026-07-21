@@ -30,11 +30,13 @@ export const Navbar = () => {
     { label: 'Systems', path: '/products' },
     { label: 'Solutions', path: '/solutions' },
     { label: 'Technology', path: '/technology' },
-    { label: 'Company', path: '/about' }
+    { label: 'Company', path: '/about' },
+    { label: 'Contact', path: '/contact' }
   ];
 
   return (
-    <header className={twMerge(clsx(
+    <>
+      <header className={twMerge(clsx(
       'fixed top-0 left-0 right-0 z-50 transition-all duration-500',
       scrolled ? 'bg-black/95 backdrop-blur-md border-b border-white/10 py-2' : 'bg-transparent py-6'
     ))}>
@@ -59,9 +61,6 @@ export const Navbar = () => {
               {item.label}
             </a>
           ))}
-          <a href="/contact" className="border border-white/30 px-6 py-2 text-xs text-white uppercase tracking-[0.1em] font-bold hover:bg-white hover:text-black transition-colors duration-300">
-            Contact
-          </a>
         </div>
 
         {/* Mobile Toggle */}
@@ -78,6 +77,7 @@ export const Navbar = () => {
           <div className={clsx("w-6 h-0.5 bg-white mt-1.5 transition-transform", mobileMenuOpen && "-rotate-45 -translate-y-2")} aria-hidden="true" />
         </button>
       </nav>
+    </header>
 
       {/* Mobile Menu Drawer */}
       <AnimatePresence>
@@ -91,7 +91,7 @@ export const Navbar = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ type: 'tween', duration: 0.3 }}
-            className="fixed inset-0 z-50 bg-black flex flex-col items-center justify-center space-y-8"
+            className="fixed inset-0 z-50 bg-black/80 backdrop-blur-lg flex flex-col items-center justify-center space-y-8"
           >
             <button 
               aria-label="Close menu"
@@ -110,7 +110,7 @@ export const Navbar = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.1 + (i * 0.1) }}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="text-white text-3xl font-sans font-bold tracking-wider uppercase focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white px-4 py-2"
+                  className="text-white text-xl font-sans font-bold tracking-widest uppercase focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white px-4 py-2"
                 >
                   {item.label}
                 </motion.a>
@@ -119,6 +119,6 @@ export const Navbar = () => {
           </motion.div>
         )}
       </AnimatePresence>
-    </header>
+    </>
   );
 };

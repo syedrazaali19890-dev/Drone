@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 
 export const MissionSection = () => {
   return (
-    <section className="relative w-full bg-black py-32 px-6 md:px-16 lg:px-32 border-t border-[#111]">
-      <div className="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 items-center">
+    <section className="relative w-full bg-black py-16 md:py-32 px-6 md:px-16 lg:px-32 border-t border-[#111]">
+      <div className="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 md:gap-24 items-center">
         
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
@@ -43,7 +43,7 @@ export const MissionSection = () => {
           <img 
             src="/manufacturing_1.jpg" 
             alt="Precision Manufacturing" 
-            className="absolute inset-0 w-full h-full object-cover z-10 grayscale hover:grayscale-0 transition-all duration-700 opacity-80"
+            className="absolute inset-0 w-full h-full object-cover z-10 transition-all duration-700 opacity-80"
           />
           {/* Tech overlay decorations */}
           <div className="absolute top-4 left-4 z-20 flex flex-col gap-1">

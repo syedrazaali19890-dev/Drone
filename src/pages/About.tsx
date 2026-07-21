@@ -6,21 +6,21 @@ const About = () => {
   return (
     <div className="bg-[var(--color-bg-primary)] min-h-screen">
       
-  <div className="pt-40 pb-20 px-8 bg-[var(--color-bg-secondary)] border-b border-[var(--color-border)] text-center">
+  <div className="pt-24 md:pt-40 pb-20 px-4 md:px-8 bg-[var(--color-bg-secondary)] border-b border-[var(--color-border)] text-center">
     <h1 className="text-5xl md:text-6xl font-heading font-bold text-white mb-6">About Us</h1>
     <p className="text-[var(--color-text-secondary)] text-xl max-w-2xl mx-auto">Securing the world through innovation and uncompromising excellence.</p>
   </div>
 
       
-      <section className="py-24 px-8 max-w-[1000px] mx-auto text-center">
+      <section className="py-16 md:py-24 px-4 md:px-8 max-w-[1000px] mx-auto text-center">
         <h2 className="text-3xl font-heading font-bold text-white mb-6">Our Story</h2>
         <p className="text-[var(--color-text-secondary)] text-lg leading-relaxed">
           Founded on the principle that absolute security is a prerequisite for progress, Antigravity has grown into a global leader in autonomous defense systems. Our journey is defined by relentless innovation.
         </p>
       </section>
 
-      <section className="py-24 px-8 bg-[var(--color-bg-secondary)]">
-        <div className="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+      <section className="py-16 md:py-24 px-4 md:px-8 bg-[var(--color-bg-secondary)]">
+        <div className="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
           <div>
             <h2 className="text-3xl font-heading font-bold text-white mb-6">Our Mission</h2>
             <p className="text-[var(--color-text-secondary)] text-lg">To provide impenetrable, intelligent defense infrastructure that adapts faster than the threats it neutralizes.</p>
@@ -31,7 +31,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="py-24 px-8">
+      <section className="py-16 md:py-24 px-4 md:px-8">
         <div className="max-w-[1440px] mx-auto text-center mb-16">
           <h2 className="text-3xl font-heading font-bold text-white mb-6">Core Values</h2>
         </div>
@@ -44,7 +44,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="py-24 px-8 bg-[var(--color-bg-secondary)]">
+      <section className="py-16 md:py-24 px-4 md:px-8 bg-[var(--color-bg-secondary)]">
         <div className="max-w-[1440px] mx-auto text-center mb-16">
           <h2 className="text-3xl font-heading font-bold text-white mb-6">Executive Leadership</h2>
         </div>
@@ -60,7 +60,7 @@ const About = () => {
       </section>
 
       
-  <div className="py-24 px-8 bg-[var(--color-bg-primary)] text-center">
+  <div className="py-16 md:py-24 px-4 md:px-8 bg-[var(--color-bg-primary)] text-center">
     <h2 className="text-4xl font-heading font-bold text-white mb-6">Ready to get started?</h2>
     <Button variant="primary" size="lg">Contact Us Today</Button>
   </div>

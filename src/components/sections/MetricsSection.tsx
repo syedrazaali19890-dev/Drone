@@ -10,7 +10,7 @@ export const MetricsSection = () => {
   ];
 
   return (
-    <section className="py-24 px-8 bg-gradient-to-b from-[var(--color-bg-primary)] to-[var(--color-bg-secondary)]">
+    <section className="py-16 md:py-24 px-4 md:px-8 bg-gradient-to-b from-[var(--color-bg-primary)] to-[var(--color-bg-secondary)]">
       <div className="max-w-[1440px] mx-auto grid grid-cols-2 lg:grid-cols-4 gap-8">
         {metrics.map((m, i) => (
           <Card key={i} variant="statistic">

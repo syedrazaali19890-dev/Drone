@@ -4,7 +4,7 @@ import { Button } from '../buttons/Button';
 
 export const NewsSection = () => {
   return (
-    <section className="py-32 px-8 bg-[var(--color-bg-primary)] border-t border-[var(--color-border)]">
+    <section className="py-16 md:py-32 px-4 md:px-8 bg-[var(--color-bg-primary)] border-t border-[var(--color-border)]">
       <div className="max-w-[1440px] mx-auto mb-16 flex justify-between items-end">
         <div>
           <h2 className="text-4xl font-heading font-bold text-white mb-4">Latest Updates</h2>

@@ -94,7 +94,7 @@ const StructuredServiceSection = ({
                 loop 
                 muted 
                 playsInline 
-                className="absolute inset-0 w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 opacity-90"
+                className="absolute inset-0 w-full h-full object-cover transition-all duration-700 opacity-90"
               >
                 <source src={mainMedia.src} type="video/mp4" />
               </video>
@@ -102,7 +102,7 @@ const StructuredServiceSection = ({
               <img 
                 src={mainMedia.src} 
                 alt={sectionTitle} 
-                className="absolute inset-0 w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 opacity-90"
+                className="absolute inset-0 w-full h-full object-cover transition-all duration-700 opacity-90"
               />
             )}
             {/* Tech decorations to match our theme */}
@@ -129,7 +129,7 @@ const StructuredServiceSection = ({
                 <img 
                   src={sub.image} 
                   alt={sub.title} 
-                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
+                  className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/80 to-transparent pt-24 pb-6 px-4">
                   <h4 className="text-lg md:text-xl font-bold text-white text-center uppercase tracking-wider">

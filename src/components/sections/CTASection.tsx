@@ -3,7 +3,7 @@ import { Button } from '../buttons/Button';
 
 export const CTASection = () => {
   return (
-    <section className="py-32 px-8 bg-[var(--color-bg-primary)]">
+    <section className="py-16 md:py-32 px-4 md:px-8 bg-[var(--color-bg-primary)]">
       <div className="max-w-[1000px] mx-auto glass-panel p-16 text-center relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[var(--color-accent)] to-transparent" />
         <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">Ready to secure your future?</h2>

@@ -5,7 +5,7 @@ import { DynamicImage } from '../media/DynamicImage';
 
 export const FeaturedProductsSection = () => {
   return (
-    <section className="py-32 px-8 bg-[var(--color-bg-primary)]">
+    <section className="py-16 md:py-32 px-4 md:px-8 bg-[var(--color-bg-primary)]">
       <div className="max-w-[1440px] mx-auto mb-16 flex justify-between items-end">
         <div>
           <h2 className="text-4xl font-heading font-bold text-white mb-4">Featured Solutions</h2>

@@ -29,7 +29,7 @@ export const LoadingScreen = ({ onComplete }: { onComplete: () => void }) => {
           >
             {/* Logo placeholder */}
             <div className="flex items-center gap-4 mb-8">
-              <img src="/logo.png" alt="Rave MFG Logo" className="h-32 md:h-40 object-contain mix-blend-screen" />
+              <img src="/logo.png" alt="Rave MFG Logo" className="h-24 sm:h-32 md:h-40 w-auto max-w-[80vw] object-contain mix-blend-screen" />
             </div>
             <div className="w-48 h-[1px] bg-white/20 overflow-hidden relative">
               <motion.div

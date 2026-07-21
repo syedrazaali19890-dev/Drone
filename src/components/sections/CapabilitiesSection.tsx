@@ -10,7 +10,7 @@ export const CapabilitiesSection = () => {
   ];
 
   return (
-    <section className="py-32 px-8 bg-[var(--color-bg-secondary)] border-y border-[var(--color-border)]">
+    <section className="py-16 md:py-32 px-4 md:px-8 bg-[var(--color-bg-secondary)] border-y border-[var(--color-border)]">
       <div className="max-w-[1440px] mx-auto text-center mb-16">
         <h2 className="text-4xl font-heading font-bold text-white mb-4">Core Capabilities</h2>
         <p className="text-[var(--color-text-secondary)] max-w-2xl mx-auto">Scalable infrastructure designed to adapt to any threat vector.</p>

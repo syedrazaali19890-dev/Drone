@@ -5,7 +5,7 @@ export const IndustriesSection = () => {
   const industries = ['Defense', 'Critical Infrastructure', 'Border Security', 'Commercial Aviation'];
   
   return (
-    <section className="py-32 px-8 bg-[var(--color-bg-primary)]">
+    <section className="py-16 md:py-32 px-4 md:px-8 bg-[var(--color-bg-primary)]">
       <div className="max-w-[1440px] mx-auto text-center mb-16">
         <h2 className="text-4xl font-heading font-bold text-white mb-4">Industries We Serve</h2>
       </div>
